@@ -1,0 +1,39 @@
+The goose game rules kata (part 1)
+
+The game is played on a spiral-shaped board consisting of 63 spaces.
+Players take turns to roll the dice and moved their piece into space forward by the sum of the two dice.
+
+TheGooseGameBoard
+
+Write a program that runs through the board spaces and prints the rules of the game according to the board space.
+For all the spaces you must print Stay in space {{space you fell in}}, but for multiples of six print Move two spaces forward,
+and for space 6 add the rule The Bridge: Go to space 12.
+
+Sample output:
+
+Stay in space 1
+Stay in space 2
+Stay in space 3
+Stay in space 4
+Stay in space 5
+The Bridge: Go to space 12
+Stay in space 7
+Stay in space 8
+Stay in space 9
+Stay in space 10
+Stay in space 11
+Move two spaces forward.
+Stay in space 13
+Stay in space 14
+Stay in space 15
+Stay in space 16
+Stay in space 17
+Move two spaces forward.
+...etc
+
+he goose game rules kata (part 2)
+Add this rule for the space 19: The Hotel: Stay for (miss) one turn, The Well: Wait until someone comes to pull you out -they
+then take your place for the space 31, and The Maze: Go back to space 39 for the space 42.
+
+Add the prison rule for the spaces 50 to 55 and print The Prison: Wait until someone comes to release you -they
+then take your place
