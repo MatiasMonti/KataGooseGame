@@ -1,12 +1,8 @@
-import rules.DefaultRule
-import rules.MultiplesOfSixRule
-import rules.NoRule
-import rules.NumberSixRule
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
 class GooseGameShould {
-    private val myGooseGame = GooseGame(listOf(DefaultRule(),MultiplesOfSixRule(),NumberSixRule(),NoRule()))
+    private val myGooseGame = GooseGame.GooseGameFactory.createCustom()
 
     @Test
     fun printSpace1Should() {
