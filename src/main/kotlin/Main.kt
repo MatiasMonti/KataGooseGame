@@ -1,5 +1,5 @@
 
 fun main() {
-    val myGooseGame = GooseGame()
-    myGooseGame.runThroughBoard()
+    val myGooseGame = GooseGame2Factory.create()
+    GooseGameBoardPrinter.play(myGooseGame)
 }

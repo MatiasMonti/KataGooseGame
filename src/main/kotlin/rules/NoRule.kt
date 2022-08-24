@@ -4,7 +4,7 @@ import Rule
 
 class NoRule: Rule {
 
-    override val order = 100
+    override val order = EnumRulePriority.Lowest.priority
 
     override fun theInputFits(spaceBoard: Int): Boolean {
         return (true)

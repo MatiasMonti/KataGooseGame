@@ -31,9 +31,8 @@ Stay in space 17
 Move two spaces forward.
 ...etc
 
-he goose game rules kata (part 2)
-Add this rule for the space 19: The Hotel: Stay for (miss) one turn, The Well: Wait until someone comes to pull you out -they
-then take your place for the space 31, and The Maze: Go back to space 39 for the space 42.
-
-Add the prison rule for the spaces 50 to 55 and print The Prison: Wait until someone comes to release you -they
-then take your place
+the goose game rules kata (part 2)
+Add this rule for the space 19: The Hotel: Stay for (miss) one turn,
+The Well: Wait until someone comes to pull you out then take your place for the space 31,
+and The Maze: Go back to space 39 for the space 42.
+Add the prison rule for the spaces 50 to 55 and print The Prison: Wait until someone comes to release you then take your place

@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="GooseGameShould" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-08-19T02:11:46" hostname="DESKTOP-BQ618PG" time="0.005">
+<testsuite name="GooseGameShould" tests="11" skipped="0" failures="0" errors="0" timestamp="2022-08-24T01:59:05" hostname="DESKTOP-BQ618PG" time="0.009">
   <properties/>
   <testcase name="printSpace1Should[node]" classname="GooseGameShould" time="0.001"/>
-  <testcase name="printSpace2Should[node]" classname="GooseGameShould" time="0.0"/>
-  <testcase name="printMultipleOfSixShould[node]" classname="GooseGameShould" time="0.001"/>
+  <testcase name="printSpace2Should[node]" classname="GooseGameShould" time="0.001"/>
+  <testcase name="printMultipleOfSixShould[node]" classname="GooseGameShould" time="0.0"/>
   <testcase name="printAnotherMultipleOfSixShould[node]" classname="GooseGameShould" time="0.0"/>
   <testcase name="printNumberSixShould[node]" classname="GooseGameShould" time="0.0"/>
   <testcase name="wrongSpaceBoardShould[node]" classname="GooseGameShould" time="0.001"/>
+  <testcase name="gooseGame2TheHotelShould[node]" classname="GooseGameShould" time="0.0"/>
+  <testcase name="gooseGame2TheWellShould[node]" classname="GooseGameShould" time="0.0"/>
+  <testcase name="gooseGame2TheMazeShould[node]" classname="GooseGameShould" time="0.0"/>
+  <testcase name="gooseGame2ThePrison50Should[node]" classname="GooseGameShould" time="0.001"/>
+  <testcase name="gooseGame2ThePrison55Should[node]" classname="GooseGameShould" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

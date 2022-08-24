@@ -1,13 +1,14 @@
 package rules
 
+import GameData
 import Rule
 
 class NumberSixRule: Rule {
 
-    override val order = 1
+    override val order = EnumRulePriority.High.priority
 
     override fun theInputFits(spaceBoard: Int): Boolean {
-        return (spaceBoard == 6 && spaceBoard <= GooseGame.boardSize)
+        return (spaceBoard == 6 && spaceBoard <= GameData().boardSize)
     }
 
     override fun getRule(spaceBoard: Int): String {

@@ -18,17 +18,13 @@
 }(this, function (_, Kotlin, $module$kotlin_test, $module$KataGooseGame) {
   'use strict';
   var assertEquals = $module$kotlin_test.kotlin.test.assertEquals_3m0tl5$;
-  var DefaultRule = $module$KataGooseGame.rules.DefaultRule;
-  var MultiplesOfSixRule = $module$KataGooseGame.rules.MultiplesOfSixRule;
-  var NumberSixRule = $module$KataGooseGame.rules.NumberSixRule;
-  var NoRule = $module$KataGooseGame.rules.NoRule;
-  var listOf = Kotlin.kotlin.collections.listOf_i5x0yv$;
-  var GooseGame = $module$KataGooseGame.GooseGame;
+  var anonymous = $module$KataGooseGame;
   var Kind_CLASS = Kotlin.Kind.CLASS;
   var test = $module$kotlin_test.kotlin.test.test;
   var suite = $module$kotlin_test.kotlin.test.suite;
   function GooseGameShould() {
-    this.myGooseGame_0 = new GooseGame(listOf([new DefaultRule(), new MultiplesOfSixRule(), new NumberSixRule(), new NoRule()]));
+    this.myGooseGame_0 = anonymous.GooseGameFactory.create();
+    this.myGooseGame2_0 = anonymous.GooseGame2Factory.create();
   }
   GooseGameShould.prototype.printSpace1Should = function () {
     var result = this.myGooseGame_0.showSpaceRule_za3lpa$(1);
@@ -53,6 +49,26 @@
   GooseGameShould.prototype.wrongSpaceBoardShould = function () {
     var result = this.myGooseGame_0.showSpaceRule_za3lpa$(78);
     assertEquals(result, 'There is no Rule for that Board Space');
+  };
+  GooseGameShould.prototype.gooseGame2TheHotelShould = function () {
+    var result = this.myGooseGame2_0.showSpaceRule_za3lpa$(19);
+    assertEquals(result, 'Stay for (miss) one turn');
+  };
+  GooseGameShould.prototype.gooseGame2TheWellShould = function () {
+    var result = this.myGooseGame2_0.showSpaceRule_za3lpa$(31);
+    assertEquals(result, 'Wait until someone comes to pull you out then take your place');
+  };
+  GooseGameShould.prototype.gooseGame2TheMazeShould = function () {
+    var result = this.myGooseGame2_0.showSpaceRule_za3lpa$(42);
+    assertEquals(result, 'Go back to space 39');
+  };
+  GooseGameShould.prototype.gooseGame2ThePrison50Should = function () {
+    var result = this.myGooseGame2_0.showSpaceRule_za3lpa$(50);
+    assertEquals(result, 'Wait until someone comes to release you then take your place');
+  };
+  GooseGameShould.prototype.gooseGame2ThePrison55Should = function () {
+    var result = this.myGooseGame2_0.showSpaceRule_za3lpa$(55);
+    assertEquals(result, 'Wait until someone comes to release you then take your place');
   };
   GooseGameShould.$metadata$ = {
     kind: Kind_CLASS,
@@ -79,6 +95,21 @@
       });
       test('wrongSpaceBoardShould', false, function () {
         return (new GooseGameShould()).wrongSpaceBoardShould();
+      });
+      test('gooseGame2TheHotelShould', false, function () {
+        return (new GooseGameShould()).gooseGame2TheHotelShould();
+      });
+      test('gooseGame2TheWellShould', false, function () {
+        return (new GooseGameShould()).gooseGame2TheWellShould();
+      });
+      test('gooseGame2TheMazeShould', false, function () {
+        return (new GooseGameShould()).gooseGame2TheMazeShould();
+      });
+      test('gooseGame2ThePrison50Should', false, function () {
+        return (new GooseGameShould()).gooseGame2ThePrison50Should();
+      });
+      test('gooseGame2ThePrison55Should', false, function () {
+        return (new GooseGameShould()).gooseGame2ThePrison55Should();
       });
     });
   });
